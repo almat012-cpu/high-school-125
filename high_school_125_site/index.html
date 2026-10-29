@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIGH SCHOOL 125 — Школа будущего</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <div class="logo-icon">125</div>
+                <div>HIGH SCHOOL<small>EDUCATION • FUTURE</small></div>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">☰</button>
+            <nav id="mainNav">
+                <a href="#home">Главная</a><a href="#about">О школе</a><a href="#life">Школьная жизнь</a><a href="#teachers">Учителя</a><a href="#offline-course">Курс ЕНТ</a>
+                <a href="#news">Новости</a><a href="#schedule">Расписание</a><a href="#uniform">Школьная форма</a><a href="#grants">Гранты и ЕНТ</a><button class="search-toggle" id="searchToggle" type="button" aria-label="Поиск по сайту" aria-expanded="false">⌕ <span>Поиск</span></button><a href="#contacts" class="nav-button">Контакты ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-panel" id="searchPanel" hidden>
+        <div class="search-panel-inner container">
+            <label for="siteSearch">Что вы хотите найти?</label>
+            <div class="search-input-wrap"><span aria-hidden="true">⌕</span><input id="siteSearch" type="search" placeholder="Например: расписание, спорт, новости…" autocomplete="off"><button id="clearSearch" type="button" aria-label="Очистить поиск">✕</button></div>
+            <p class="search-hint" id="searchHint">Введите слово или тему — покажем подходящие разделы сайта.</p>
+            <div class="search-results" id="searchResults" aria-live="polite"></div>
+        </div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="eyebrow">Открываем возможности</div>
+                    <h1>Твоё будущее начинается <span>здесь.</span></h1>
+                    <p class="hero-description">HIGH SCHOOL 125 — пространство знаний, открытий и новых возможностей. Учимся сегодня, чтобы создавать будущее завтра.</p>
+                    <div class="hero-actions">
+                        <a href="#about" class="button button-primary">Узнать о школе <span>→</span></a>
+                        <a href="#life" class="button button-secondary">Наша школьная жизнь</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card top"><div class="floating-icon">📚</div><div><strong>Знания каждый день</strong><small>Открывай новое</small></div></div>
+                    <div class="visual-main">
+                        <div class="visual-label">HIGH SCHOOL 125</div>
+                        <h2>Учись. Мечтай. Создавай.</h2>
+                        <p>Здесь идеи становятся целями, а цели — достижениями.</p>
+                        <div class="visual-symbol">✦</div>
+                    </div>
+                    <div class="floating-card bottom"><div class="floating-icon">✨</div><div><strong>Твой путь к успеху</strong><small>Начинается здесь</small></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-section"><div class="container quick-grid">
+            <a href="#about" class="quick-card reveal"><div class="quick-icon">🏫</div><h3>Наша школа</h3><p>Узнай больше о нашей школе и её ценностях.</p></a>
+            <a href="#schedule" class="quick-card reveal"><div class="quick-icon">📅</div><h3>Расписание</h3><p>Важная информация об учебном процессе.</p></a>
+            <a href="#achievements" class="quick-card reveal"><div class="quick-icon">🏆</div><h3>Достижения</h3><p>Победы, успехи и результаты наших учеников.</p></a>
+            <a href="#events" class="quick-card reveal"><div class="quick-icon">🎉</div><h3>Мероприятия</h3><p>События, конкурсы и активная школьная жизнь.</p></a>
+        </div></section>
+
+        <section class="content-section about-section" id="about"><div class="container about-grid">
+            <div class="about-art reveal"><div class="about-art-card"><strong>Знания открывают двери в будущее.</strong><p>Каждый день — новый шаг к большим целям.</p></div></div>
+            <div class="about-content reveal">
+                <div class="section-heading"><div class="section-tag">О нашей школе</div><h2>Больше, чем просто уроки</h2><p>Школа — это место, где формируются характер, мышление и стремление к новым вершинам.</p></div>
+                <p class="about-text">HIGH SCHOOL 125 — это сообщество учеников, педагогов и родителей, объединённых общей целью: создавать условия для обучения, развития талантов и раскрытия потенциала каждого ученика.</p>
+                <div class="about-points">
+                    <div class="about-point"><span class="check">✓</span><span>Качественное образование</span></div>
+                    <div class="about-point"><span class="check">✓</span><span>Творческое развитие</span></div>
+                    <div class="about-point"><span class="check">✓</span><span>Спортивные достижения</span></div>
+                    <div class="about-point"><span class="check">✓</span><span>Дружная школьная семья</span></div>
+                </div>
+                <a href="#life" class="button button-primary">Познакомиться со школой →</a>
+            </div>
+        </div></section>
+
+        <section class="content-section" id="life"><div class="container">
+            <div class="section-heading reveal"><div class="section-tag">Наш мир</div><h2>Школьная жизнь<br>в каждом моменте</h2><p>Школа — это не только учебники и уроки. Это дружба, соревнования, открытия, творчество и воспоминания на всю жизнь.</p></div>
+            <div class="life-grid">
+                <article class="life-card reveal"><div class="life-visual">📚</div><div class="life-content"><h3>Учёба и знания</h3><p>Исследуем новое, задаём вопросы, развиваем мышление и открываем для себя мир знаний.</p><a href="#schedule" class="life-link">Учебный процесс →</a></div></article>
+                <article class="life-card reveal"><div class="life-visual">🏆</div><div class="life-content"><h3>Олимпиады и конкурсы</h3><p>Проверяем свои силы, участвуем в интеллектуальных состязаниях и стремимся к новым результатам.</p><a href="#achievements" class="life-link">Наши достижения →</a></div></article>
+                <article class="life-card reveal"><div class="life-visual">⚽</div><div class="life-content"><h3>Спорт и активность</h3><p>Развиваем командный дух, силу характера и любовь к активному образу жизни.</p><a href="#events" class="life-link">Спортивная жизнь →</a></div></article>
+                <article class="life-card reveal"><div class="life-visual">🎨</div><div class="life-content"><h3>Творчество</h3><p>Выражаем себя через искусство, дизайн, музыку и собственные необычные идеи.</p><a href="#events" class="life-link">Творческие события →</a></div></article>
+                <article class="life-card reveal"><div class="life-visual">🤝</div><div class="life-content"><h3>Дружба и команда</h3><p>Поддерживаем друг друга, работаем вместе и создаём атмосферу взаимопомощи.</p><a href="#contacts" class="life-link">Связаться со школой →</a></div></article>
+                <article class="life-card reveal"><div class="life-visual">🌍</div><div class="life-content"><h3>Новые горизонты</h3><p>Развиваем кругозор, изучаем современные технологии и готовимся к возможностям будущего.</p><a href="#about" class="life-link">О наших ценностях →</a></div></article>
+            </div>
+        </div></section>
+
+        <section class="content-section news-section" id="news"><div class="container">
+            <div class="section-top"><div class="section-heading reveal"><div class="section-tag">Будь в курсе</div><h2>Новости школы</h2><p>Здесь будут появляться актуальные новости, объявления и важные события из жизни нашей школы.</p></div></div>
+            <div class="filter-row" role="group" aria-label="Фильтр новостей"><button class="filter-chip active" type="button" data-filter="all">Все</button><button class="filter-chip" type="button" data-filter="news">Новости</button><button class="filter-chip" type="button" data-filter="education">Образование</button><button class="filter-chip" type="button" data-filter="life">Школьная жизнь</button></div>
+            <div class="news-grid">
+                <article class="news-card reveal" data-category="news"><div class="news-date">НОВОСТИ</div><h3>Новости и объявления</h3><p>Следите за школьными новостями, важными сообщениями и обновлениями для учеников и родителей.</p></article>
+                <article class="news-card reveal" data-category="education"><div class="news-date">ОБРАЗОВАНИЕ</div><h3>Учебные события</h3><p>Информация об олимпиадах, конкурсах, предметных неделях и других образовательных мероприятиях.</p></article>
+                <article class="news-card reveal" data-category="life"><div class="news-date">ШКОЛЬНАЯ ЖИЗНЬ</div><h3>Наши события</h3><p>Рассказываем о школьных праздниках, спортивных состязаниях, проектах и достижениях учеников.</p></article>
+            </div>
+        </div></section>
+
+        <section class="content-section" id="schedule"><div class="container">
+            <div class="section-heading reveal"><div class="section-tag">Всегда под рукой</div><h2>Расписание школы</h2><p>Здесь можно посмотреть актуальное расписание. Если таблица не отображается, откройте её отдельно.</p></div>
+            <div class="schedule-embed reveal" style="background:#fff;border:1px solid #e4eaf8;border-radius:22px;padding:12px;box-shadow:0 14px 36px rgba(23,70,162,.08)">
+                <iframe title="Расписание HIGH SCHOOL 125" src="https://docs.google.com/spreadsheets/d/1rHj-qaHxDI70c_oeqVIC5RiwlHBqjhF7J4Bli6JN2dw/preview?usp=drivesdk&amp;embedded=true" style="display:block;width:100%;height:680px;border:0;border-radius:14px;background:#f7f9ff" loading="lazy" allowfullscreen></iframe>
+                <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 6px 4px"><span style="color:#5e6c86;font-size:14px">Расписание загружается из Google Таблиц.</span><a class="button" href="https://docs.google.com/spreadsheets/d/1rHj-qaHxDI70c_oeqVIC5RiwlHBqjhF7J4Bli6JN2dw/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">Открыть расписание ↗</a></div>
+            </div>
+        </div></section>
+
+        <section class="content-section achievements-section" id="achievements"><div class="container">
+            <div class="section-heading reveal"><div class="section-tag">Наши результаты</div><h2>Достижения и возможности</h2><p>Каждый успех начинается с маленького шага. Мы ценим стремление к знаниям, развитие талантов и готовность преодолевать трудности.</p></div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal"><div class="achievement-icon">🎓</div><span class="achievement-number">Знания</span><p>Стремление к обучению и новым открытиям</p></div>
+                <div class="achievement-card reveal"><div class="achievement-icon">🥇</div><span class="achievement-number">Победы</span><p>Участие в конкурсах и соревнованиях</p></div>
+                <div class="achievement-card reveal"><div class="achievement-icon">💡</div><span class="achievement-number">Идеи</span><p>Творчество, проекты и нестандартное мышление</p></div>
+                <div class="achievement-card reveal"><div class="achievement-icon">🚀</div><span class="achievement-number">Будущее</span><p>Новые цели, возможности и перспективы</p></div>
+            </div>
+        </div></section>
+
+
+        <section class="teachers-section" id="teachers"><div class="container">
+            <div class="teachers-heading reveal"><div class="section-tag">Люди, которые вдохновляют</div><h2>Сильная школа начинается с <span>сильной команды</span></h2><p class="teachers-intro">За каждым шагом ученика вперёд стоят наставники, которые делятся знаниями, поддерживают в непростые моменты и помогают увидеть собственные возможности. Мы ценим профессионализм, доброту и искреннее отношение наших учителей и менторов к каждому ученику.</p></div>
+            <div class="teachers-feature">
+                <figure class="teachers-photo-main reveal"><img src="images/image-1.webp" alt="Команда учителей и менторов HIGH SCHOOL 125" loading="lazy"><figcaption class="teachers-photo-caption"><span>НАША КОМАНДА</span><h3>Знания. Забота. Ответственность.</h3><p>Люди, которые каждый день вкладывают силы и душу в образование.</p></figcaption></figure>
+                <div class="teachers-message reveal"><div class="message-mark"></div><h3>Не просто учителя — наставники на пути к успеху</h3><p>Наши учителя и менторы ответственно относятся к своему делу и стремятся не только объяснить материал, но и помочь ученику разобраться, поверить в себя и не сдаваться перед трудностями.</p><p>Их профессионализм сочетается с добротой, отзывчивостью и готовностью поддержать тогда, когда это особенно нужно.</p><p>Ведь настоящее образование — это не только знания и оценки, но и человеческое участие, которое помогает расти и двигаться вперёд.</p></div>
+            </div>
+            <div class="teachers-values">
+                <article class="teacher-value reveal"><div class="teacher-value-icon">✦</div><div><h4>Профессионализм</h4><p>Глубокие знания, внимательность к учебному процессу и стремление помогать ученикам развиваться.</p></div></article>
+                <article class="teacher-value reveal"><div class="teacher-value-icon">♡</div><div><h4>Доброта и искренность</h4><p>Уважительное отношение, умение выслушать и поддержать в сложный момент.</p></div></article>
+                <article class="teacher-value reveal"><div class="teacher-value-icon">✓</div><div><h4>Ответственность</h4><p>Серьёзное отношение к своей работе и забота о том, чтобы каждый ученик мог двигаться вперёд.</p></div></article>
+            </div>
+            <div class="teachers-gallery">
+                <figure class="teachers-photo-card reveal"><img src="images/image-2.webp" alt="Мужская команда учителей и менторов HIGH SCHOOL 125" loading="lazy"><figcaption>Команда, на которую можно положиться</figcaption></figure>
+                <figure class="teachers-photo-card reveal"><img src="images/image-3.webp" alt="Учителя и менторы HIGH SCHOOL 125 вместе" loading="lazy"><figcaption>Вместе создаём возможности для будущего</figcaption></figure>
+            </div>
+            <p class="teachers-note reveal">Каждый учитель и ментор вносит свой вклад в школьную жизнь. Спасибо за знания, поддержку и ответственное отношение к своему делу.</p>
+        </div></section>
+
+
+        <section class="offline-course" id="offline-course"><div class="container">
+            <div class="section-heading reveal"><div class="section-tag">HIGH SCHOOL 125 · Подготовка к ЕНТ</div><h2>Готовься к ЕНТ, <span style="color:var(--blue)">не меняя свою школу</span></h2><p>Офлайн-курс для учеников 10–11 классов: продолжай учиться в своей школе, а после уроков приходи к нам на системную подготовку к ЕНТ.</p></div>
+            <div class="course-shell">
+                <div class="course-main reveal">
+                    <div class="course-kicker">🚀 Приём учеников 10–11 классов</div>
+                    <h2>Твоя цель — ЕНТ.<br><span>Твой план — подготовка.</span></h2>
+                    <p class="course-lead">Занятия проходят офлайн после школьных уроков. Опытные преподаватели, современные методы обучения и подготовка, ориентированная на результат, помогут тебе последовательно двигаться к своей цели.</p>
+                    <div class="course-facts">
+                        <div class="course-fact"><span class="course-fact-icon">📅</span><span>5 занятий в неделю</span></div>
+                        <div class="course-fact"><span class="course-fact-icon">📚</span><span>4 предмета в программе</span></div>
+                        <div class="course-fact"><span class="course-fact-icon">🏫</span><span>Офлайн после уроков</span></div>
+                    </div>
+                    <a class="course-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdJqx_OtbC3yqRSVYaVPMFPKJt9_eKCBMdRcJkHcTxJKJUMwQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaepBLb_Lh3ziZKEryTEOaDrXwMQAVq6gwJvvBK9OOg_IqB3asejKF-NCtC6xw_aem_nur9yLlIJ_GzbGVm8qeH_w" target="_blank" rel="noopener noreferrer">Записаться на курс <span aria-hidden="true">↗</span></a>
+                    <p class="course-cta-note">Нажми, чтобы открыть форму записи.</p>
+                </div>
+                <div class="course-details reveal">
+                    <div class="course-price-card">
+                        <div class="course-price-top"><span class="course-price-label">Стоимость курса</span><span class="course-price-badge">10–11 классы</span></div>
+                        <div class="course-price">60 000 <span>₸</span></div>
+                        <p class="course-price-caption">Стоимость, указанная в информации о курсе.</p>
+                    </div>
+                    <div class="course-detail-card">
+                        <h3>Подготовка по 4 предметам</h3>
+                        <div class="course-subjects">
+                            <div class="course-subject"><span class="course-subject-icon">🎯</span><span>Профильный предмет № 1</span></div>
+                            <div class="course-subject"><span class="course-subject-icon">🎯</span><span>Профильный предмет № 2</span></div>
+                            <div class="course-subject"><span class="course-subject-icon">🇰🇿</span><span>История Казахстана</span></div>
+                            <div class="course-subject"><span class="course-subject-icon">🧮</span><span>Математическая грамотность</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-benefits">
+                <article class="course-benefit reveal"><div class="course-benefit-icon">👩‍🏫</div><h3>Опытные преподаватели</h3><p>Занятия проводят преподаватели с опытом подготовки учеников.</p></article>
+                <article class="course-benefit reveal"><div class="course-benefit-icon">💡</div><h3>Современная методика</h3><p>Обучение строится с использованием современных подходов к подготовке.</p></article>
+                <article class="course-benefit reveal"><div class="course-benefit-icon">📈</div><h3>Фокус на результате</h3><p>Подготовка направлена на последовательную работу над знаниями и заданиями ЕНТ.</p></article>
+            </div>
+            <div class="course-bottom-cta reveal"><div><strong>Готов начать подготовку?</strong><p>Заполни форму, чтобы зарегистрироваться на офлайн-курс HIGH SCHOOL 125.</p></div><a class="course-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdJqx_OtbC3yqRSVYaVPMFPKJt9_eKCBMdRcJkHcTxJKJUMwQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaepBLb_Lh3ziZKEryTEOaDrXwMQAVq6gwJvvBK9OOg_IqB3asejKF-NCtC6xw_aem_nur9yLlIJ_GzbGVm8qeH_w" target="_blank" rel="noopener noreferrer">Перейти к записи ↗</a></div>
+        </div></section>
+
+        <section class="content-section" id="events"><div class="container">
+            <div class="section-heading reveal"><div class="section-tag">Вместе интереснее</div><h2>Мероприятия и события</h2><p>Школьные события объединяют учеников, помогают раскрыть таланты и превращают обычные дни в яркие воспоминания.</p></div>
+            <div class="events-grid">
+                <article class="event-card reveal"><div class="event-icon">🎤</div><h3>Школьные праздники</h3><p>Торжественные мероприятия, концерты, тематические дни и праздничные программы.</p></article>
+                <article class="event-card reveal"><div class="event-icon">⚽</div><h3>Спортивные соревнования</h3><p>Турниры, командные состязания и мероприятия для любителей спорта.</p></article>
+                <article class="event-card reveal"><div class="event-icon">💡</div><h3>Проекты и инициативы</h3><p>Новые идеи, ученические проекты, конкурсы и совместные инициативы.</p></article>
+            </div>
+        </div></section>
+
+
+
+        <section class="content-section uniform-section" id="uniform"><div class="container">
+            <div class="uniform-layout">
+                <div class="uniform-copy reveal">
+                    <div class="uniform-kicker">✦ HIGH SCHOOL 125 · UNIFORM</div>
+                    <h2 class="uniform-title">Единый стиль.<br><span>Наша школьная форма.</span></h2>
+                    <p class="uniform-description">Форма HIGH SCHOOL 125 — это узнаваемый стиль, школьные традиции и чувство единства. Выберите образ, который отражает дух нашей школы.</p>
+                    <div class="uniform-note"><div class="uniform-note-icon">🧵</div><div><strong>Форма доступна для заказа через школу</strong><p>Школьную форму можно приобрести на заказ. Чтобы узнать подробности, варианты и условия, обратитесь к администрации школы.</p></div></div>
+                </div>
+                <div class="uniform-visual reveal"><img src="images/image-4.webp" alt="Варианты школьной формы HIGH SCHOOL 125" loading="lazy"><div class="uniform-badge">HIGH SCHOOL 125 · OFFICIAL STYLE</div></div>
+            </div>
+        </div></section>
+
+        <section class="content-section faq-section" id="grants"><div class="container">
+            <div class="section-heading reveal"><div class="section-tag">Наши результаты</div><h2>Гранты и высокие баллы ЕНТ</h2><p>Мы гордимся учениками, которые добиваются высоких результатов на ЕНТ и открывают для себя путь к обучению в вузах на образовательных грантах.</p></div>
+            <div class="achievements-grid grants-grid">
+                <div class="achievement-card reveal"><div class="achievement-icon">🎓</div><span class="achievement-number">Образовательные гранты</span><p>Многие выпускники стремятся получить гранты и продолжить обучение в выбранных университетах.</p></div>
+                <div class="achievement-card reveal"><div class="achievement-icon">📈</div><span class="achievement-number">Высокие баллы ЕНТ</span><p>Ученики показывают высокие результаты благодаря подготовке, дисциплине и упорной работе.</p></div>
+                <div class="achievement-card reveal"><div class="achievement-icon">🎯</div><span class="achievement-number">Цель — поступление</span><p>Поддерживаем стремление учеников уверенно идти к поступлению и будущей профессии.</p></div>
+            </div>
+            <p class="reveal" style="max-width:850px;margin:28px auto 0;text-align:center;color:#65718a;line-height:1.7">Точные цифры по количеству грантов и результатам ЕНТ можно добавить сюда после подтверждения официальной статистики школы.</p>
+        </div></section>
+
+        <section class="contact-section" id="contacts"><div class="container">
+            <div class="contact-banner reveal"><div class="contact-banner-content"><h2>Будущее создаётся вместе.</h2><p>HIGH SCHOOL 125 — место, где каждый может учиться, развиваться и двигаться к своим целям. Добро пожаловать в нашу школьную жизнь!</p></div><a href="#footer" class="button">Контактная информация →</a></div>
+        </div></section>
+    </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Наверх" title="Наверх">↑</button>
+
+    <footer id="footer"><div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><a href="#home" class="logo"><div class="logo-icon">125</div><div>HIGH SCHOOL<small>EDUCATION • FUTURE</small></div></a><p>Образование, развитие и новые возможности. Вместе создаём пространство, в котором хочется учиться, мечтать и достигать большего.</p></div>
+            <div class="footer-column"><h3>Навигация</h3><a href="#home">Главная</a><a href="#about">О школе</a><a href="#life">Школьная жизнь</a><a href="#teachers">Учителя и менторы</a><a href="#news">Новости</a><a href="#schedule">Расписание</a><a href="#uniform">Школьная форма</a><a href="#grants">Гранты и ЕНТ</a></div>
+            <div class="footer-column"><h3>Контакты</h3><p>HIGH SCHOOL 125</p><p>Адрес школы: Проспект Санкибай батыра, 49а, Актобе</p><p>Телефон: <a href="tel:+77001502315">+7 700 150 23 15</a></p><p>WhatsApp: <a href="https://wa.me/77476824726" target="_blank" rel="noopener noreferrer">+7 747 682 47 26</a></p></div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> HIGH SCHOOL 125</span><span>Создано с заботой об образовании 💙</span></div>
+    </div></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
